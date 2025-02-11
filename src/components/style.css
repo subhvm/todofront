@@ -1,0 +1,159 @@
+body {
+  background-color: #1e1e2f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.main {
+  width: 600px;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #2a2a3b;
+  animation: fadeIn 1.2s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  font-size:large;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1{
+  margin-left:15rem;
+  animation: glow 2s infinite alternate;
+
+  
+}
+label {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #bbb;
+  animation: slideInLabel 0.8s ease forwards;
+  font-size: large;
+}
+
+/* Slide-in effect for labels */
+@keyframes slideInLabel {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-left: -1rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #1f1f2f;
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus effect for input */
+input:focus {
+  box-shadow: 0 0 12px #007bff;
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Button bounce animation */
+@keyframes buttonBounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #555;
+  animation: none;
+}
+
+.error-message {
+  color: rgb(255, 94, 94);
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0;
+  animation: errorFadeIn 2s ease forwards;
+}
+
+/* Error message fade-in */
+@keyframes errorFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.toggle-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: large;
+  animation: linkGlow 1.5s infinite alternate;
+}
+
+/* Glowing animation for toggle link */
+@keyframes linkGlow {
+  from {
+    color: #007bff;
+  }
+  to {
+    color: #00bfff;
+  }
+}
+
+/* Smooth transition for entire app */
+* {
+  transition: all 0.3s ease-in-out;
+}

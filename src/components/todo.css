@@ -1,0 +1,268 @@
+body {
+    background-color: #1c1b1b;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.todo-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    background-color: #2e2e3b;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0e0e0;
+    animation: glow 2s infinite alternate;
+}
+
+/* Glowing effect for title */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #007bff, 0 0 20px #0056b3;
+    }
+    to {
+        text-shadow: 0 0 20px #00bfff, 0 0 40px #007bff;
+    }
+}
+
+/* Error message */
+.error-message {
+    color: #ff4d4d;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInError 0.5s ease;
+}
+
+/* Error message fade-in animation */
+@keyframes fadeInError {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Form */
+.todo-form {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #1f1f2f;
+    color: white;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Focus effect for input fields */
+.input-field:focus {
+    box-shadow: 0 0 10px #007bff;
+    border-color: #007bff;
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Disabled button */
+.submit-button:disabled {
+    cursor: not-allowed;
+    background-color: #555;
+}
+
+/* List styles */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.no-todos-message {
+    text-align: center;
+    color: #bbb;
+}
+
+/* Todo item */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #3a3a4a;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Todo item hover effect */
+.todo-item:hover {
+    background-color: #505050;
+    transform: translateY(-3px);
+}
+
+/* Todo text */
+.todo-text {
+    flex: 1;
+    color: #a0ff80;
+    cursor: pointer;
+    word-wrap: break-word;
+    transition: color 0.3s ease;
+}
+
+/* Completed task styling */
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button */
+.delete-button {
+    background-color: transparent;
+    color: red;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Trash icon */
+.trash-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828843.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* Hover effect for delete button */
+.delete-button:hover {
+    transform: scale(1.2);
+    color: darkred;
+}
+
+/* Focus outline */
+.delete-button:focus {
+    outline: 2px solid red;
+}
+
+/* Logout button */
+.logout-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for logout button */
+.logout-button:hover {
+    background-color: #a71d2a;
+    transform: translateY(-3px);
+}
+
+/* Toggle button */
+.toggle-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Completed toggle state */
+.toggle-button.completed {
+    background-color:red ;
+}
+
+/* Hover effect for toggle button */
+.toggle-button:hover {
+    background-color:0056b3;
+}
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    align-items: center;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-right: 100rem;
+
+}
+
+.username {
+    font-size: 18px;
+    color: #e0e0e0;
+    font-weight: bold;
+}
