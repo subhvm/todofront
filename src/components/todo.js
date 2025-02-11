@@ -134,6 +134,7 @@ function TodoApp() {
     localStorage.removeItem('token');
     localStorage.removeItem('username');
     navigate('/login');
+    window.location.reload();
   };
 
   if (fetching) {
