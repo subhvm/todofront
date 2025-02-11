@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
+import './footer.css'
 
 function Auth({ onLogin }) {
   const [username, setUsername] = useState('');
@@ -53,6 +54,7 @@ function Auth({ onLogin }) {
   };
 
   return (
+    <div>
     <div className="main">
       <h1>TICKR</h1>
       <h2>{isSignup ? 'Signup' : 'Login'}</h2>
@@ -86,7 +88,10 @@ function Auth({ onLogin }) {
           {isSignup ? 'Login here' : 'Signup here'}
         </span>
       </p>
-    </div>
+      
+    </div><footer className="footer">
+      <p>&copy; {new Date().getFullYear()} TICKR. All rights reserved.</p>
+    </footer></div>
     
 );
 

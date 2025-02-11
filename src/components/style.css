@@ -12,7 +12,7 @@ body {
   border: 1px solid #333;
   border-radius: 12px;
   color: #fff;
-  background-color: #2a2a3b;
+  background-color: black;
   animation: fadeIn 1.2s ease-in-out;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   font-size:large;

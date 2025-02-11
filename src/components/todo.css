@@ -1,5 +1,5 @@
 body {
-    background-color: #1c1b1b;
+    background-color: white;
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
     border: 1px solid #444;
     border-radius: 12px;
-    background-color: #2e2e3b;
+    background-color: black;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     animation: fadeIn 1.2s ease-in-out;
 }

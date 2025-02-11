@@ -10,7 +10,7 @@ function App() {
     console.log('Auth status updated:', isAuthenticated);
   }, [isAuthenticated]);
 
-  // Listen for storage changes (e.g., when token is saved)
+  // Listen for storage changes (e.g., when token is saved or removed)
   useEffect(() => {
     const handleStorageChange = () => {
       setIsAuthenticated(!!localStorage.getItem('token'));
@@ -25,11 +25,12 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/login" element={!isAuthenticated ? <Auth onLogin={() => setIsAuthenticated(true)} /> : <Navigate to="/todos" />} />
-        <Route path="/todos" element={isAuthenticated ? <TodoApp /> : <Navigate to="/login" />} />
-        <Route path="*" element={<Navigate to="/login" />} />
-      </Routes>
+        <Routes>
+          <Route path="/login" element={!isAuthenticated ? <Auth onLogin={() => setIsAuthenticated(true)} /> : <Navigate to="/todos" />} />
+          <Route path="/todos" element={isAuthenticated ? <TodoApp /> : <Navigate to="/login" />} />
+          <Route path="*" element={<Navigate to="/login" />} />
+        </Routes>
+       
     </Router>
   );
 }

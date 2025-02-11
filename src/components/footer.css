@@ -1,0 +1,29 @@
+.footer {
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+  }
+  
+  .footer p {
+    margin: 0;
+    animation: fadeInFooter 1.2s ease-in-out;
+  }
+  
+  /* Footer animation */
+  @keyframes fadeInFooter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
