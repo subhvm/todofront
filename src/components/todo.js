@@ -149,7 +149,7 @@ function TodoApp() {
     <div className="todo-container">
      
 
-      <h2 className="title">TICKTR</h2>
+      <h2 className="title">TICKR</h2>
       {error && <p className="error-message">{error}</p>}
 
       {/* Add or Edit Form */}
@@ -163,7 +163,7 @@ function TodoApp() {
           placeholder="Enter title"
           className="input-field"
         />
-        <textarea
+        <input
           value={editMode.id ? editMode.description : newDescription}
           onChange={(e) =>
             editMode.id ? setEditMode({ ...editMode, description: e.target.value }) : setNewDescription(e.target.value)
@@ -200,7 +200,7 @@ function TodoApp() {
                   ✏️ Edit
                 </button>
                 <button className="delete-button" onClick={() => handleDeleteTodo(todo._id)}>
-                  🗑️
+                  Delete
                 </button>
               </div>
             </li>

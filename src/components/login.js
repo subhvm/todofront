@@ -54,7 +54,7 @@ function Auth({ onLogin }) {
 
   return (
     <div className="main">
-      <h1>TICKTR</h1>
+      <h1>TICKR</h1>
       <h2>{isSignup ? 'Signup' : 'Login'}</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group">

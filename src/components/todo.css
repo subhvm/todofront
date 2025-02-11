@@ -86,7 +86,9 @@ body {
     outline: none;
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
     margin-bottom: 10px;
+    margin-right: 2rem;
 }
+
 
 /* Focus effect for input fields */
 .input-field:focus {
@@ -140,21 +142,27 @@ body {
     border-radius: 8px;
     background-color: #3a3a4a;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    border-color: white;
+    border-width: 1rem;
 }
 
 /* Todo item hover effect */
 .todo-item:hover {
-    background-color: #505050;
+    background-color: #000000;
     transform: translateY(-3px);
+    color: white;
 }
 
 /* Todo text */
 .todo-text {
     flex: 1;
-    color: #a0ff80;
+    color:white;
     cursor: pointer;
     word-wrap: break-word;
     transition: color 0.3s ease;
+    font-size: x-large;
+    margin-bottom: 20rem;
+   
 }
 
 /* Completed task styling */
@@ -164,38 +172,10 @@ body {
 }
 
 /* Delete button */
-.delete-button {
-    background-color: transparent;
-    color: red;
-    border: none;
-    border-radius: 4px;
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
 
-/* Trash icon */
-.trash-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828843.png') no-repeat center center;
-    background-size: contain;
-}
 
-/* Hover effect for delete button */
-.delete-button:hover {
-    transform: scale(1.2);
-    color: darkred;
-}
 
-/* Focus outline */
-.delete-button:focus {
-    outline: 2px solid red;
-}
+
 
 /* Logout button */
 .logout-button {
