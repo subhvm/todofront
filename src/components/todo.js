@@ -150,7 +150,7 @@ function TodoApp() {
     <div className="todo-container">
      
 
-      <h2 className="title">TICKR</h2>
+      <h2 className="title">tick-r</h2>
       {error && <p className="error-message">{error}</p>}
 
       {/* Add or Edit Form */}
