@@ -90,7 +90,7 @@ function Auth({ onLogin }) {
       </p>
       
     </div><footer className="footer">
-      <p>&copy; {new Date().getFullYear()} TICKR. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} tick-r. All rights reserved.</p>
     </footer></div>
     
 );
