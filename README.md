@@ -45,8 +45,6 @@ Here's a **README.md** description for your **Tickr** project:
 3. Set up environment variables:  
    Create a `.env` file in the backend directory and add:  
    ```sh
-   MONGO_URI= mongodb+srv://SUBHAM:9818@todo.qjpqy.mongodb.net/usyour_mongodb_connection_string
-   JWT_SECRET=secret_123
    ```
 
 4. Start the development server:  
