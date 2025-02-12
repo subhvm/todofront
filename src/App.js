@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Auth from './components/login';
 import TodoApp from './components/todo';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
@@ -30,7 +31,7 @@ function App() {
           <Route path="/todos" element={isAuthenticated ? <TodoApp /> : <Navigate to="/login" />} />
           <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
-       
+        <Analytics />
     </Router>
   );
 }
