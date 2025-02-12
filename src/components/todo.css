@@ -150,10 +150,10 @@ body {
 
 /* Todo item hover effect */
 .todo-item:hover {
-    background-color: #000000;
     transform: translateY(-3px);
-    color: white;
 }
+
+    
 
 /* Todo text */
 .todo-text {

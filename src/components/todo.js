@@ -144,7 +144,7 @@ function TodoApp() {
   return (
     <div>
       <div className="user-info">
-          <span className="username">{username}</span>
+          {username}
         </div>
     
     <div className="todo-container">
@@ -195,13 +195,13 @@ function TodoApp() {
                   className={`toggle-button ${todo.completed ? 'completed' : ''}`}
                   onClick={() => handleToggleComplete(todo._id, todo.completed)}
                 >
-                  {todo.completed ? 'Mark Incomplete' : 'Mark Complete'}
+                  {todo.completed ? 'Mark Incomplete ❌' : 'Mark Complete ✅'}
                 </button>
                 <button className="edit-button" onClick={() => handleEditTodo(todo._id, todo.title, todo.description)}>
                   ✏️ Edit
                 </button>
                 <button className="delete-button" onClick={() => handleDeleteTodo(todo._id)}>
-                  Delete
+                  Delete 🗑️
                 </button>
               </div>
             </li>
@@ -213,6 +213,7 @@ function TodoApp() {
           Logout
         </button>
     </div>
+    
     
     </div>
     

@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Here's a **README.md** description for your **Tickr** project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# 📝 Tickr - Task Management App  
 
-## Available Scripts
+**Tickr** is a **full-stack task management application** built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)** to help users efficiently track and manage their tasks.
 
-In the project directory, you can run:
+## 🚀 Features  
 
-### `npm start`
+✔️ **User Authentication** – Secure login/signup with JWT authentication  
+✔️ **Task Management** – Create, edit, and delete tasks with descriptions  
+✔️ **Task Completion Toggle** – Mark tasks as complete/incomplete  
+✔️ **Real-Time Updates** – Dynamic UI with React state management  
+✔️ **Responsive Design** – Fully optimized for all devices  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🏗️ Tech Stack  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js, React Router, Axios  
+- **Backend**: Node.js, Express.js, MongoDB  
+- **Authentication**: JSON Web Token (JWT)  
+- **Database**: MongoDB Atlas  
+- **Deployment**: Frontend hosted on Vercel, Backend deployed on Render  
 
-### `npm test`
+## 📦 Installation  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:  
+   ```sh
+   git clone front https://github.com/subhvm/todofront.git
+   git clone back https://github.com/subhvm/todo-back.git
 
-### `npm run build`
+   cd tickr
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:  
+   ```sh
+   # Install backend dependencies
+   cd backend
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   # Install frontend dependencies
+   cd ../frontend
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Set up environment variables:  
+   Create a `.env` file in the backend directory and add:  
+   ```sh
+   MONGO_URI= mongodb+srv://SUBHAM:9818@todo.qjpqy.mongodb.net/usyour_mongodb_connection_string
+   JWT_SECRET=secret_123
+   ```
 
-### `npm run eject`
+4. Start the development server:  
+   ```sh
+   # Run backend
+   cd backend
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   # Run frontend
+   cd ../frontend
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔗 API Routes  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔹 **Authentication Routes**
+- `POST /api/auth/signup` – Register a new user  
+- `POST /api/auth/login` – Authenticate user and return a token  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔹 **Todo Routes**
+- `GET /api/todo` – Fetch all todos  
+- `POST /api/todo` – Add a new todo  
+- `PUT /api/todo/:id` – Update a todo  
+- `DELETE /api/todo/:id` – Delete a todo  
 
-## Learn More
+## 🚀 Deployment  
+- **Frontend**: https://todofront-sandy.vercel.app/login 
+- **Backend**: (https://todo-back-1-7ci7.onrender.com) 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📜 License  
+This project is open-source and available under the **MIT License**.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💡 Contributing  
+Contributions are welcome! Feel free to submit a pull request or open an issue.  
 
-### Code Splitting
+## 👥 Author  
+- **Subham Chaudhary** - [LinkedIn Profile](https://www.linkedin.com/in/subham-chaudhary-81961ba0/)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
+🔹 **Stay organized with Tickr! 🚀**
+```
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README follows best practices with clear installation steps, API documentation, and deployment info. Let me know if you want any modifications! 🚀
